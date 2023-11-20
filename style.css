@@ -1,0 +1,56 @@
+body{
+    margin :0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header{
+    display: grid;
+    grid-column: span 2;
+    border: 1px solid blue;
+}
+
+.sidebar{
+    display: grid;
+    grid-column: 1;
+    border: 1px solid green;
+}
+
+/*Mid section*/
+.midContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+/*Left side of mid section*/
+.cardContent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column: 1;
+    border: 1px solid red;
+}
+.card{
+    border: 1px solid red;
+}
+.cardTitle{
+    border: 1px solid red;
+}
+.cardText{
+    border: 1px solid red;
+}
+
+/*Right side of mid section*/
+.rightContent{
+    display: grid;
+    grid-column: 2;
+    border: 1px solid red;
+}
+
+.announcement{
+    display: grid;
+    border: 1px solid red;
+}
+.trending{
+    display: grid;
+    border: 1px solid red;
+}
