@@ -1,7 +1,3 @@
-/*TODO
-Fixa sidebar*/
-
-
 body{
     margin :0;
     padding: 0;
@@ -11,32 +7,51 @@ body{
     grid-template-rows: 1fr 5fr;
 }
 
+
+/*Header section*/
 .header{
     display: grid;
     grid-column-start: 2;
     background-color: white;
+    padding: 30px 50px;
 }
-
-.firstSectionHeader{
+.upperHeader, .lowerHeader{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
-
-.secondSectionHeader{
+.icon{ /*Skapa ikon-klasser istället.*/
+    width: 2rem;
+}
+/*Upper*/
+.search{
     display: grid;
-    grid-template-columns: 3fr 1fr;    
+    grid-template-columns: 1fr 12fr;
+    align-items: center;
+    padding-right: 150px; /*?*/
+}
+.searchbar{
+    border-radius: 25px;
+    background-color: rgb(225, 226, 230);
+    min-height: 40px; /*?*/
 }
 
-
-.secondSectionHeader > div{
-    display: flex;
-    align-items: center;   
+.profilesomething{ /*?!*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
-.firstSectionHeader img, .secondSectionHeader img{
-    width: 50px;
+.smallProfilePicture{
+    width: 4rem;
+}
+/*Lower*/
+
+
+.largeProfilePicture{
+    width: 6rem;
 }
 
+/*Sidebar section*/
 .sidebar{
     display: grid;
     grid-template-rows: 1fr 3fr 4fr;
@@ -73,15 +88,9 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.firstSidebarList img, .secondSidebarList img{
-    width: 2rem;
-}
 .dashboard img{
     width: 3rem;
 }
- 
-
-
 
 
 /*Mid section*/
