@@ -147,7 +147,7 @@ button{
 }
 
 /*Left side of mid section*/
-.cardContent{
+.cardContainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-column: 1;
