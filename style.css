@@ -5,15 +5,18 @@ body{
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 
 /*Header section*/
+
 .header{
     display: grid;
     grid-column-start: 2;
     background-color: white;
-    padding: 30px 50px;
+    padding: 15px 50px;
 }
 .upperHeader, .lowerHeader{
     display: grid;
@@ -22,12 +25,13 @@ body{
 .icon{ /*Skapa ikon-klasser istället.*/
     width: 2rem;
 }
+
 /*Upper*/
 .search{
     display: grid;
     grid-template-columns: 1fr 12fr;
     align-items: center;
-    padding-right: 150px; /*?*/
+     /*?*/
 }
 .searchbar{
     border-radius: 25px;
@@ -35,23 +39,58 @@ body{
     min-height: 40px; /*?*/
 }
 
-.profilesomething{ /*?!*/
+.smallProfile{ /*?!*/
+    padding-left: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 
+.smallProfile > p{ /*?!*/
+font-size: 1rem;
+
+;}
+
 .smallProfilePicture{
     width: 4rem;
 }
-/*Lower*/
 
+/*Lower*/
+.largeProfile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-self: start;
+    align-items: center;
+}
 
 .largeProfilePicture{
     width: 6rem;
 }
 
+h2{ 
+    font-size: 2rem;
+}
+
+.headerButtons{ /*?!*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+button{ 
+    background-color:rgb(22, 32, 26); 
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+
 /*Sidebar section*/
+
 .sidebar{
     display: grid;
     grid-template-rows: 1fr 3fr 4fr;
@@ -65,13 +104,12 @@ body{
 .secondSidebarList li, 
 .dashboard li{
     list-style: none;
-    font-size: 20px;
+    font-size: 1rem;
     display: flex;
     gap: 10px;
     align-items: center;
     align-self: start;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
