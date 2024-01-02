@@ -1,1 +1,1 @@
-Simple dashboard made with HTML and CSS using grid.
+Simple dashboard made with HTML and CSS, using grid and flexbox.

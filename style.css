@@ -6,12 +6,10 @@ body{
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 
 /*Header section*/
-
 .header{
     display: grid;
     grid-column-start: 2;
@@ -31,22 +29,21 @@ body{
     display: grid;
     grid-template-columns: 1fr 12fr;
     align-items: center;
-     /*?*/
 }
 .searchbar{
     border-radius: 25px;
     background-color: rgb(225, 226, 230);
-    min-height: 40px; /*?*/
+    min-height: 40px; 
 }
 
-.smallProfile{ /*?!*/
+.smallProfile{ 
     padding-left: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 
-.smallProfile > p{ /*?!*/
+.smallProfile > p{ 
     font-size: 1rem;
 ;}
 
@@ -62,11 +59,11 @@ body{
     align-items: center;
 }
 
-.largeProfilePicture{
+.bigProfilePicture{
     width: 6rem;
 }
 
-.headerButtons{ /*?!*/
+.headerButtons{ 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -85,7 +82,6 @@ button{
 
 
 /*Sidebar section*/
-
 .sidebar{
     display: grid;
     grid-template-rows: 1fr 3fr 4fr;
@@ -135,14 +131,12 @@ button{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 15fr;
     background-color: rgb(225, 226, 230);
-    
 }
 
 .projectsTitle{
     margin: 0;
     font-size: 26px;
     padding: 20px 0px 0px 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*vrf behövs denna här?*/
 }
 
 
@@ -174,7 +168,7 @@ button{
 .cardIcons{
     display: flex;
     flex-direction: row;
-    justify-self: end; /*hur skapa mellanrum?*/
+    justify-self: end; 
     gap: 2rem;
 }
 
@@ -192,7 +186,7 @@ button{
     grid-column: 2;
     grid-template-rows: 6fr 1fr 6fr;
     gap: 20px;
-    padding: 20px 50px 20px 0px; /*fult?*/
+    padding: 20px 50px 20px 0px; 
 }
 
 .announcementsTitle, .trendingTitle{
@@ -212,19 +206,24 @@ button{
 .singleAnnounce{
    padding: 0px 30px;
 }
-.singleAnnounce > h2{
+.rightTitles{
     font-size: 20px;   
     margin-bottom: 0;
 }
-
 .singleAnnounce > p{
     margin-top: 0;
 }
 
-.trending li{
-    list-style: none;
-    font-size: 1rem;
-    display: flex;
+.trending{
+    grid-template-columns: 1fr 3fr;
     align-items: center;
-    align-self: start;
+    gap: 2rem;
+    padding: 30px;
+}
+.trending > img{
+    grid-column: 1;
+    justify-self: center;
+}
+.trendingNames{
+    grid-column: 2;
 }
